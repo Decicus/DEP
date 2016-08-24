@@ -17,3 +17,4 @@ $app->get('/', function() {
 
 $app->get('/b/{size}/{id}.{extension}', ['as' => 'bttv', 'uses' => 'EmotesController@bttv']);
 $app->get('/t/{size}/{id}', ['as' => 'twitch', 'uses' => 'EmotesController@twitch']);
+$app->get('/t/{size}/{id}.png', ['as' => 'twitch', 'uses' => 'EmotesController@twitch']);
