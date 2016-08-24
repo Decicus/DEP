@@ -57,9 +57,8 @@ class EmotesController extends Controller
             "3.0"
         ];
         $suffix = ".0";
-        $size = "2.0";
 
-        if (!in_array($size . $suffix, $sizes)) {
+        if (in_array($size . $suffix, $sizes)) {
             $size = $size . $suffix;
         } else {
             $size = "2.0";
